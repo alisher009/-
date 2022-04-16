@@ -1,0 +1,50 @@
+.wraper{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 50px;
+    /* background: #212121; */
+}
+
+
+.accordion {
+    background-color: #CFD8DC;
+    color: #fff;
+    cursor: pointer;
+    padding: 16px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.5s;
+    
+}
+
+.active, .accordion:hover {
+    background-color: #5d5f5f;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #fff;
+  font-size: 18px;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+  color: #212121;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+.wraper h1 {
+    font-size:50px;
+}
